@@ -1,0 +1,25 @@
+{
+    "name": "enlargeClick",
+    "description": "Enlarge cursor on every click",
+    "version": "0.1",
+    "author": "Thomas Le",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "tabs","<all_urls>"
+    ],
+    "content_scripts": [
+        {
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+            ],
+        "js": ["content/script.js"],
+        "run_at": "document_end"
+        }
+    ],
+    "web_accessible_resources": [
+        "images/*"
+    ],
+    "manifest_version":2
+}
