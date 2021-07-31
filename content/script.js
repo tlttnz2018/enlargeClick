@@ -1,4 +1,3 @@
-/*Sets the cursor depending on the selected theme.*/
 function runScript() {
     var cursorURL = chrome.extension.getURL("images/dog-chichi.png")
 
